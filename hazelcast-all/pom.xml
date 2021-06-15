@@ -87,8 +87,7 @@
                                 </excludes>
                             </artifactSet>
                             <transformers>
-                                <transformer
-                                        implementation="com.hazelcast.buildutils.HazelcastManifestTransformer">
+                                <transformer implementation="com.hazelcast.buildutils.HazelcastManifestTransformer">
                                     <mainClass>com.hazelcast.console.ConsoleApp</mainClass>
                                     <overrideInstructions>
                                         <Import-Package>
@@ -106,8 +105,7 @@
                                         </Import-Package>
                                     </overrideInstructions>
                                 </transformer>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                             </transformers>
                             <filters>
                                 <filter>
@@ -156,7 +154,7 @@
         <dependency>
             <groupId>com.hazelcast</groupId>
             <artifactId>hazelcast-aws</artifactId>
-            <version>2.0.1</version>
+            <version>2.4</version>
         </dependency>
         <dependency>
             <groupId>com.hazelcast</groupId>
@@ -171,7 +169,7 @@
         <dependency>
             <groupId>com.hazelcast</groupId>
             <artifactId>hazelcast-wm</artifactId>
-            <version>3.8.1</version>
+            <version>3.8.4</version>
         </dependency>
     </dependencies>
 </project>
